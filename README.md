@@ -1,5 +1,39 @@
-## Curating Code Completions
-Replication Package for [***"A Transformer-Based Approach for Smart Invocation of Automatic Code Completion"***](https://huggingface.co/collections/AISE-TUDelft/smart-invocation-of-code-completion-66473ddf6fa6cf6e541f750c) @ FSE [AIWARE'24](https://2024.aiwareconf.org/track/aiware-2024-papers). 
+<h2 align="center"><b><h3>A Transformer-Based Approach for Smart Invocation of Automatic Code Completion</h3></b></h2><br>
+
+
+<p align="center">
+  <b>Aral de Moor, Arie van Deursen, and Maliheh Izadi</b>
+</p>
+
+<p align="center">
+  <i>
+    Delft University of Technology<br>
+    AISE Lab @ Software Engineering Research Group<br>
+  </i>
+</p>
+<br>
+
+<p align="center">
+  <a href="https://arxiv.org/abs/2405.14753"><b>Full Paper (with Appendices)</b></a><br>
+  <a href="https://doi.org/10.1145/3664646.3664760"><b>Workshop Paper</a> (<a href="https://2024.aiwareconf.org/track/aiware-2024-papers">AIWARE</a> @ FSE'24)</b><br>
+  <a href="https://huggingface.co/collections/AISE-TUDelft/smart-invocation-of-code-completion-66473ddf6fa6cf6e541f750c"><b>HuggingFace Model Collection</b></a>
+</p>
+<br>
+
+---
+<br>
+<h3 align="center"><b>Abstract</b></h3><br>
+Transformer-based language models are highly effective for code completion, with much research dedicated to enhancing the content of these completions. Despite their effectiveness, these models come with high operational costs and can be intrusive, especially when they suggest too often and interrupt developers who are concentrating on their work. Current research largely overlooks how these models interact with developers in practice and neglects to address when a developer should receive completion suggestions. To tackle this issue, we developed a machine learning model that can accurately predict when to invoke a code completion tool given the code context and available telemetry data.
+<br></br>
+To do so, we collect a dataset of 200k developer interactions with our cross-IDE code completion plugin and train several invocation filtering models. Our results indicate that our small-scale transformer model significantly outperforms the baseline while maintaining low enough latency. We further explore the search space for integrating additional telemetry data into a pre-trained transformer directly and obtain promising results. To further demonstrate our approach's practical potential, we deployed the model in an online environment with 34 developers and provided real-world insights based on 74k actual invocations.
+</br>
+
+---
+<br>
+
+### Contents
+
+This repository contains the (online) appendix, source code used to train our models, and the offline evaluation. 
 
 #### Appendix to the Paper
 [`appendix.pdf`](./appendix.pdf) is the online appendix, containing results from additional exploration and experimentation beyond the scope of the paper. It is also available in the full paper on [Arxiv](https://arxiv.org/abs/2405.14753). Specifically: 
