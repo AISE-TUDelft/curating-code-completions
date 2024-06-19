@@ -1,4 +1,4 @@
-<h2 align="center"><b><h3>A Transformer-Based Approach for Smart Invocation of Automatic Code Completion</h3></b></h2><br>
+<h2 align="center"><b><h3>A Transformer-Based Approach for <br> Smart Invocation of Automatic Code Completion</h3></b></h2><br>
 
 
 <p align="center">
